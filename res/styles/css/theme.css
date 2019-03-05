@@ -3,11 +3,13 @@
 /*COLOR*/
 /*PRE DEFINED COLOR CLASSES*/
 .bg-primary-dark,
+#sidebar .nav-badge,
 .card.card-fill-primary,
 .card.card-fill-primary .card-header,
 .card.card-fill-primary .card-footer,
 .alert.alert-primary,
 .btn.btn-primary:hover,
+.dropdown-menu.dropdown-primary .dropdown-item:hover,
 .btn.btn-outline-primary:hover {
   background-color: #4a89dc !important;
 }
@@ -15,7 +17,9 @@
 .card.card-fill-primary.card-contrast .card-header,
 .card.card-fill-primary.card-contrast .card-footer,
 .alert.alert-primary.alert-contrast .icon,
-.btn.btn-primary {
+.btn.btn-primary,
+.modal .modal-primary .modal-header,
+.dropdown-menu.dropdown-primary {
   background-color: #5d9cec !important;
 }
 .bg-secondary-dark,
@@ -31,7 +35,8 @@
 .card.card-fill-secondary.card-contrast .card-footer,
 .alert.alert-secondary,
 .btn.btn-secondary,
-.btn.btn-outline-light:hover {
+.btn.btn-outline-light:hover,
+.modal .modal-secondary .modal-header {
   background-color: #e6e9ed !important;
 }
 .bg-success-dark,
@@ -40,6 +45,7 @@
 .card.card-fill-success .card-footer,
 .alert.alert-success,
 .btn.btn-success:hover,
+.dropdown-menu.dropdown-success .dropdown-item:hover,
 .btn.btn-outline-success:hover {
   background-color: #37bc9b !important;
 }
@@ -47,7 +53,9 @@
 .card.card-fill-success.card-contrast .card-header,
 .card.card-fill-success.card-contrast .card-footer,
 .alert.alert-success.alert-contrast .icon,
-.btn.btn-success {
+.btn.btn-success,
+.modal .modal-success .modal-header,
+.dropdown-menu.dropdown-success {
   background-color: #48cfad !important;
 }
 .bg-warning-dark,
@@ -56,6 +64,7 @@
 .card.card-fill-warning .card-footer,
 .alert.alert-warning,
 .btn.btn-warning:hover,
+.dropdown-menu.dropdown-warning .dropdown-item:hover,
 .btn.btn-outline-warning:hover {
   background-color: #f6bb42 !important;
 }
@@ -63,7 +72,9 @@
 .card.card-fill-warning.card-contrast .card-header,
 .card.card-fill-warning.card-contrast .card-footer,
 .alert.alert-warning.alert-contrast .icon,
-.btn.btn-warning {
+.btn.btn-warning,
+.modal .modal-warning .modal-header,
+.dropdown-menu.dropdown-warning {
   background-color: #ffce54 !important;
 }
 .bg-danger-dark,
@@ -72,6 +83,7 @@
 .card.card-fill-danger .card-footer,
 .alert.alert-danger,
 .btn.btn-danger:hover,
+.dropdown-menu.dropdown-danger .dropdown-item:hover,
 .btn.btn-outline-danger:hover {
   background-color: #da4453 !important;
 }
@@ -79,7 +91,9 @@
 .card.card-fill-danger.card-contrast .card-header,
 .card.card-fill-danger.card-contrast .card-footer,
 .alert.alert-danger.alert-contrast .icon,
-.btn.btn-danger {
+.btn.btn-danger,
+.modal .modal-danger .modal-header,
+.dropdown-menu.dropdown-danger {
   background-color: #ed5565 !important;
 }
 .bg-info-dark,
@@ -95,7 +109,8 @@
 .card.card-fill-info.card-contrast .card-header,
 .card.card-fill-info.card-contrast .card-footer,
 .alert.alert-info.alert-contrast .icon,
-.btn.btn-info {
+.btn.btn-info,
+.modal .modal-info .modal-header {
   background-color: #4fc1e9 !important;
 }
 .border-primary-dark,
@@ -103,10 +118,12 @@
 .card.card-fill-primary,
 .card.card-fill-primary .card-header,
 .card.card-fill-primary .card-footer,
-.btn.btn-outline-primary {
+.btn.btn-outline-primary,
+.dropdown-menu.dropdown-primary .dropdown-divider {
   border-color: #4a89dc !important;
 }
-.border-primary-light {
+.border-primary-light,
+.dropdown-menu.dropdown-primary {
   border-color: #5d9cec !important;
 }
 .border-secondary-dark,
@@ -126,10 +143,12 @@
 .card.card-fill-success,
 .card.card-fill-success .card-header,
 .card.card-fill-success .card-footer,
-.btn.btn-outline-success {
+.btn.btn-outline-success,
+.dropdown-menu.dropdown-success .dropdown-divider {
   border-color: #37bc9b !important;
 }
-.border-success-light {
+.border-success-light,
+.dropdown-menu.dropdown-success {
   border-color: #48cfad !important;
 }
 .border-warning-dark,
@@ -137,10 +156,12 @@
 .card.card-fill-warning,
 .card.card-fill-warning .card-header,
 .card.card-fill-warning .card-footer,
-.btn.btn-outline-warning {
+.btn.btn-outline-warning,
+.dropdown-menu.dropdown-warning .dropdown-divider {
   border-color: #f6bb42 !important;
 }
-.border-warning-light {
+.border-warning-light,
+.dropdown-menu.dropdown-warning {
   border-color: #ffce54 !important;
 }
 .border-danger-dark,
@@ -148,10 +169,12 @@
 .card.card-fill-danger,
 .card.card-fill-danger .card-header,
 .card.card-fill-danger .card-footer,
-.btn.btn-outline-danger {
+.btn.btn-outline-danger,
+.dropdown-menu.dropdown-danger .dropdown-divider {
   border-color: #da4453 !important;
 }
-.border-danger-light {
+.border-danger-light,
+.dropdown-menu.dropdown-danger {
   border-color: #ed5565 !important;
 }
 .border-info-dark,
@@ -164,6 +187,51 @@
 }
 .border-info-light {
   border-color: #4fc1e9 !important;
+}
+.text-white,
+#sidebar .nav-badge,
+.card.card-fill-primary *,
+.card.card-fill-secondary *,
+.card.card-fill-success *,
+.card.card-fill-warning *,
+.card.card-fill-danger *,
+.card.card-fill-info *,
+.alert.alert-primary *,
+.alert.alert-success *,
+.alert.alert-warning *,
+.alert.alert-danger *,
+.alert.alert-info *,
+.btn.btn-primary *,
+.btn.btn-success *,
+.btn.btn-danger *,
+.btn.btn-info *,
+.modal .modal-primary .modal-header *,
+.modal .modal-success .modal-header *,
+.modal .modal-danger .modal-header *,
+.modal .modal-info .modal-header *,
+.dropdown-menu.dropdown-primary *,
+.dropdown-menu.dropdown-success *,
+.dropdown-menu.dropdown-warning *,
+.dropdown-menu.dropdown-danger * {
+  color: #FFF;
+}
+.text-primary {
+  color: #4a89dc !important;
+}
+.text-secondary {
+  color: #aab2bd !important;
+}
+.text-success {
+  color: #37bc9b !important;
+}
+.text-warning {
+  color: #f6bb42 !important;
+}
+.text-danger {
+  color: #da4453 !important;
+}
+.text-info {
+  color: #3bafda !important;
 }
 * {
   padding: 0;
@@ -228,7 +296,7 @@ html,
   background-color: #FFF;
   overflow-x: hidden;
   overflow-y: auto;
-  z-index: 9999;
+  z-index: 1000;
   border-right: 1px #dbdbdb solid;
 }
 #sidebar > .title {
@@ -304,10 +372,16 @@ html,
   border-top: 1px #dbdbdb solid;
   background-color: #FFF;
 }
-#sidebar .nav-arrow {
+#sidebar .nav-arrow,
+#sidebar .nav-badge {
   margin-left: auto;
   font-size: .8em;
-  transform: rotate(90);
+}
+#sidebar .nav-badge {
+  margin-right: -4px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: bold;
 }
 .sidebar-open {
   margin-right: 10px;
@@ -356,18 +430,6 @@ html,
   height: 40px;
   object-fit: cover;
 }
-#topbar .dropdown-menu {
-  margin-top: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-}
-#topbar .dropdown-menu * {
-  font-size: .9em;
-}
-#topbar .dropdown-menu .dropdown-item,
-#topbar .dropdown-menu .dropdown-devider {
-  padding-right: 50px;
-  padding-left: 20px;
-}
 .sidebar-show {
   left: 0px!important;
 }
@@ -379,6 +441,7 @@ html,
 }
 #content {
   padding: 25px;
+  min-height: 50vh;
 }
 /*THEME ELEMENT*/
 .card,
@@ -570,43 +633,49 @@ html,
 .btn-group.btn-group-block .btn {
   flex: 1;
 }
-.text-white,
-.card.card-fill-primary *,
-.card.card-fill-secondary *,
-.card.card-fill-success *,
-.card.card-fill-warning *,
-.card.card-fill-danger *,
-.card.card-fill-info *,
-.alert.alert-primary *,
-.alert.alert-success *,
-.alert.alert-warning *,
-.alert.alert-danger *,
-.alert.alert-info *,
-.btn.btn-primary *,
-.btn.btn-success *,
-.btn.btn-danger *,
-.btn.btn-info * {
-  color: #FFF;
+.modal .modal-content {
+  border: none;
+  border-radius: 3px;
 }
-.text-primary {
-  color: #4a89dc !important;
+.modal .modal-content .modal-header {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
-.text-secondary {
-  color: #aab2bd !important;
+.dropdown-menu {
+  margin-top: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  min-width: 190px;
 }
-.text-success {
-  color: #37bc9b !important;
+.dropdown-menu * {
+  font-size: .85em;
 }
-.text-warning {
-  color: #f6bb42 !important;
+.dropdown-menu .dropdown-item,
+.dropdown-menu .dropdown-devider {
+  padding-left: 20px;
+  margin-top: 5px;
 }
-.text-danger {
-  color: #da4453 !important;
+.breadcrumb {
+  border-radius: 0;
 }
-.text-info {
-  color: #3bafda !important;
+.breadcrumb,
+.breadcrumb * {
+  font-size: .95em;
 }
-.text-loose {
+.badge {
+  border-radius: 2px;
+  padding: 5px 6px!important;
+}
+.badge.badge-pill {
+  border-radius: 10px;
+  padding: 4px 7px;
+}
+.pagination .page-item,
+.pagination .page-item * {
+  font-size: .9em;
+  color: blue;
+}
+.text-loose,
+#sidebar .nav-badge {
   letter-spacing: .7px;
 }
 .text-small {

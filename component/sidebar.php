@@ -8,13 +8,16 @@
 		<span>template</span>
 	</div>
 	<div class="sidebar-nav">
-		<a href="index.php" class="nav nav-menu nav-active"><i class="icon-home nav-icon"></i> Dashboard</a>
+		<a href="index.php" class="nav nav-menu nav-active"><i class="icon-home nav-icon"></i> Dashboard <span class="nav-badge">10</span></a>
 		<a href="#nav-ui-component" class="nav nav-menu nav-dropdown" data-toggle='collapse'><i class="icon-puzzle nav-icon"></i> UI Component</a>
 		<div class="sidebar-nav nav-child collapse collapseable" id="nav-ui-component">
-			<a href="ui_alert.php" class="nav nav-menu">Alert</a>
+			<a href="ui_alert.php" class="nav nav-menu">Alerts</a>
 			<a href="ui_button.php" class="nav nav-menu">Buttons</a>
 			<a href="ui_card.php" class="nav nav-menu">Cards</a>
-			<a href="#" class="nav nav-menu">Modals</a>
+			<a href="ui_general.php" class="nav nav-menu">General</a>
+			<a href="ui_grid.php" class="nav nav-menu">Grids</a>
+			<a href="ui_icon.php" class="nav nav-menu">Icons</a>
+			<a href="ui_modal.php" class="nav nav-menu">Modals</a>
 		</div>
 		<a href="#nav-page" class="nav nav-menu nav-dropdown" data-toggle='collapse'><i class="icon-layers nav-icon"></i> Pages</a>
 		<div class="sidebar-nav nav-child collapse collapseable" id="nav-page">

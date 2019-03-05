@@ -48,7 +48,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6">
+					<div class="col col-xl-6">
 						<div class="card">
 							<div class="card-header">Sales</div>
 							<div class="card-body px-0 py-0">
